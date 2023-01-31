@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:learn_getx_flutter/navigation/screen_navigation.dart';
+import 'package:learn_getx_flutter/translations/translations_example.dart';
 import 'getx_connect/user_example.dart';
 import 'getx_controller/view.dart';
 import 'getx_service/settings_service.dart';
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// Navigation example, navigation between screen
-    // return const ScreenNavigation();
+    return const ScreenNavigation();
     /// Reactive State Management example, Using RxInt and Obs
     // return ReactiveStateManagement();
     /// Simple State Management example , using GetBuilder
@@ -49,6 +50,6 @@ class MyApp extends StatelessWidget {
     /// Simple Getx Widget example, extends GetWidget<SettingsService>, cart example, initialize everytime
     // return const WidgetExample();
     /// Simple GetConnect example, List of user example with API call
-    return const ConnectExample();
+    // return const ConnectExample();
   }
 }
